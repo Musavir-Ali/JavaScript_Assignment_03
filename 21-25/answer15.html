@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let password = prompt("Please enter your password:");
+        let validPassword = /^[a-zA-Z][a-zA-Z0-9]{5,}$/;
+        if(validPassword.test(password)){
+            console.log("Valid password");
+        } else {
+            console.log("Invalid password. Please enter a valid password with at least 6 characters, should contain alphabets and numbers, and should not start with a number.");
+        }
+        </script>
+</body>
+</html>

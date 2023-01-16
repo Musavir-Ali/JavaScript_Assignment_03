@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let secretNum = Math.floor(Math.random() * 10) + 1;
+        let userInput = parseInt(prompt("Guess a number between 1 and 10:"));
+        
+        if (userInput === secretNum) {
+          alert("Congratulations! You guessed the secret number!");
+        } else {
+          alert("Sorry, the number you guessed is incorrect. Please try again.");
+        }
+        </script>
+</body>
+</html>

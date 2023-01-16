@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        let startOf2015 = new Date(2015, 0, 1);
+        let elapsedTime = today.getTime() - startOf2015.getTime();
+        let elapsedSeconds = elapsedTime / 1000;
+        document.write("Seconds that have elapsed between the reference date and the beginning of 2015: " + elapsedSeconds);
+    </script>
+</body>
+</html>

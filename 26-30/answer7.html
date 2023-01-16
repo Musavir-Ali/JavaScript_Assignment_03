@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getWeight()">Submit</button>
+    <p id="weightOutput"></p>
+
+    <script>
+        function getWeight() {
+  var weight = prompt("Please enter your weight:");
+  //remove "kgs" or "kilograms" from the input
+  weight = weight.replace(/[a-zA-Z]/g, '');
+  //parse input to a number
+  weight = parseFloat(weight);
+  //If the weight is not a number or is less than 0, show an error message
+  if (isNaN(weight) || weight < 0) {
+    document.getElementById("weightOutput").innerHTML = "Invalid weight entered.";
+  } else {
+    document.getElementById("weightOutput").innerHTML = "Your weight is: " + weight + " kgs";
+  }
+}
+
+    </script>
+</body>
+</html>
